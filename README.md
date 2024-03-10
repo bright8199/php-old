@@ -81,7 +81,8 @@ echo "浏览量="。$_SESSION['views'];
 ?>  
 </BODY> 
 </HTML>  
-####13.3.4  实例7————注销和销毁会话变量- [美洲杯买球](http://sxlongyan.com)
+####13.3.4  实例7————注销和销毁会话变量
+- [美洲杯买球](http://sxlongyan.com)
 注销会话变量使用  unset() 函数就可以，如  unset($_SESSION['name']).(不需要使用 PHP 4 中的 session_unregister() 或 session unset().) unset() 函数用于释放指定的   session 变量，代码如下：  
 unset($_SESSION['views']);  
 如果要注销所有会话变量，只需要向 $_SESSION 赋值一个空数组就可以了，如 $_SESSION = array()。注销完成后，使用  session_destroy() 销毁会话即可，其实就是清楚相应的  Session ID。代码如下：  
@@ -95,14 +96,14 @@ $_SESSION['name']="王小明";
 echo "会话变量为：".$_SESSION['name'];  
 ?>  
 <a href='usesession.php'>下一页</a>```  
-step 03  在 session 文件夹下建立usesession.php，输入以下代码并保存：  - [欧洲杯外围](http://tjmme.com)
+step 03  在 session 文件夹下建立usesession.php，输入以下代码并保存： 
 ```<?php  
 session_start();  
 echo "会话变量为："。$_SESSION['NAME']."<br/>";
 echo $_SESSION['name']."你好。";  
 ?>  
 <a href='closesession.php'>下一页</a>```  
-step 04  在 session 文件夹下建立 closesession.php，输入以下代码并保存：  - [美洲杯下注](http://minghaogy.com)
+step 04  在 session 文件夹下建立 closesession.php，输入以下代码并保存：  
 ```<?php  
 session_start();  
 unset($_SESSION['name']);  
